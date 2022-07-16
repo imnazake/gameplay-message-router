@@ -50,6 +50,6 @@ Select the structure that contains your message data (SampleMessage in this case
 
 ![](/Docs/Capture09.PNG)
 
-After placing both of the actors in the level when you begin play you should see the message display on the screen.
+After placing both of the actors in the level when you begin play you should see the message displayed on the screen.
 
 ![](/Docs/Capture10.PNG)
