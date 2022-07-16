@@ -19,6 +19,10 @@ You can send and listen for messages that contain data in specific channels (def
 + Not Replicated
 
 ##### How To Use
++ Clone this repository to your project Plugins folder. (YourProject/Plugins/GameplayMessages)
++ Add 'GameplayMessageRuntime' to your PrivateDependencyModuleNames in Project.Build.cs file.
++ Regenerate project solution files.
+
 Create your message structure which contains all the data that you want to send.
 
 ![](/Docs/Capture01.PNG)
