@@ -20,4 +20,5 @@ You can send and listen for messages that contain data in specific channels (def
 
 ##### How to use
 + Create your message structure
+<br>
 ![](/Docs/Capture01.PNG)
