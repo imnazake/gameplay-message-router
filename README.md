@@ -23,7 +23,7 @@ You can send and listen for messages that contain data in specific channels (def
 + Add 'GameplayMessageRuntime' to your PrivateDependencyModuleNames in Project.Build.cs file.
 + Regenerate project solution files.
 
-Create your message structure which contains all the data that you want to send.
++ Create your message structure which contains all the data that you want to send.
 
 ![](/Docs/Capture01.PNG)
 
