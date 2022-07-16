@@ -3,10 +3,8 @@
 A subsystem that allows registering for and sending messages between unconnected gameplay objects.
 <br>
 You can send and listen for messages that contain data in specific channels (defined using gameplay tags).
+<br>
 (e.g: you can use this subsystem for sending/updating data that needs to be displayed in the user-interface).
-
-##### How to use
-+Docs: ![](/Docs/Preview.PNG)
 
 ##### Created By
 + Epic Games, Inc.
@@ -19,3 +17,7 @@ You can send and listen for messages that contain data in specific channels (def
 
 #### Network Replication
 + Not Replicated
+
+##### How to use
++ Create your message structure
+![](/Docs/Capture01.PNG)
