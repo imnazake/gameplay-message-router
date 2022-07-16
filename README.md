@@ -19,5 +19,7 @@ You can send and listen for messages that contain data in specific channels (def
 + Not Replicated
 
 ##### How to use
-# Create your message structure
+<sup> 
+* Create your message structure
+</sup>
 ![](/Docs/Capture01.PNG)
