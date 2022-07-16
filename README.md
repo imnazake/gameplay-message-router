@@ -1,4 +1,4 @@
-# Gameplay Messages Subsystem
+# Gameplay Messages
 
 A subsystem that allows registering for and sending messages between unconnected gameplay objects.
 <br>
