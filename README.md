@@ -4,7 +4,7 @@ A subsystem that allows registering for and sending messages between unconnected
 <br>
 You can send and listen for messages that contain data in specific channels (defined using gameplay tags).
 <br>
-(e.g: you can use this subsystem for sending/updating data that needs to be displayed in the user-interface).
+(e.g: you can use this subsystem for sending data that needs to be displayed in the user-interface without directly exposing game code).
 
 ##### Created By
 + Epic Games, Inc.
