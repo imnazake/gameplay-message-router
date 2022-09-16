@@ -19,8 +19,7 @@ You can send and listen for messages that contain data in specific channels (def
 + Not Replicated
 
 ##### How To Use
-+ Clone this repository to your project Plugins folder. (YourProject/Plugins/GameplayMessages)
-- Or from Lyra project (YourProject/Plugins/GameplayMessagesRouter)
++ Clone this repository to your project Plugins folder or copy/paste it from Lyra project. (YourProject/Plugins/GameplayMessages)
 + Add 'GameplayMessageRuntime' to your PrivateDependencyModuleNames in YourProject.Build.cs file.
 + Regenerate project solution files.
 
