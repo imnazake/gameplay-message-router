@@ -1,4 +1,4 @@
-# Gameplay Messages
+# Gameplay Message Router
 
 A subsystem that allows registering for and sending messages between unconnected gameplay objects.
 <br>
