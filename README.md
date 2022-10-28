@@ -54,6 +54,6 @@ On begin play we start listening for messages sent on ( Game.Data.SampleChannel 
 
 ![](/Docs/Capture09.PNG)
 
-+ After placing both of the actors in the level when you begin play you should see the message displayed on the screen.
++ After placing both of the actors in the level when you begin play you should see the message displayed on the screen which is sent from Actor01 and displayed from Actor02.
 
 ![](/Docs/Capture10.PNG)
