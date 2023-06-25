@@ -13,7 +13,7 @@ You can send and listen for messages that contain data in specific channels (def
 + 5.0.0 or higher
 
 #### Supported Platforms
-+ Windows (I use Windows)
++ Windows
 
 #### Network Replication
 + Not Replicated
