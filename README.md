@@ -19,7 +19,7 @@ You can send and listen for messages that contain data in specific channels (def
 + Not Replicated
 
 ##### How To Setup
-+ Get Lyra game project from here : [()](https://github.com/EpicGames/UnrealEngine/tree/ue5-main/Samples/Games/Lyra)
++ Get Lyra game project from here : [(Lyra Github Repo - Requires Github account to be linked to EpicGames)](https://github.com/EpicGames/UnrealEngine/tree/ue5-main/Samples/Games/Lyra)
 + Copy GameplayMessageRuntime plugin from Lyra project plugins folder, and paste it inside your project plugins folder. (YourProject/Plugins/GameplayMessageRuntime)
 + Add 'GameplayMessageRuntime' to your to YourProject.Build.cs file.
 + Regenerate project solution files.
