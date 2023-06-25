@@ -34,8 +34,8 @@ You can send and listen for messages that contain data in specific channels (def
 ![](/Docs/Capture02.PNG)
 ![](/Docs/Capture03.PNG)
 
-+ NOTE: You can also broadcast messages from blueprint like so
-![](/Docs/BP_Capture01.PNG)
++ NOTE: You can also broadcast messages from blueprint directly using BroadcastMessage node and skip creating the SendMessage function above
+![](/Docs/BP_Capture01.png)
 
 + Now to test it in blueprint i created a child actor class from MyActor C++ class and another actor that doesn't necessarily need to inherit from MyActor.
 
