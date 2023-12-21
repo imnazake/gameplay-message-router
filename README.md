@@ -11,6 +11,20 @@ To integrate the Gameplay Message Router into your project, follow these simple 
 3. Add 'GameplayMessageRuntime' to your `YourProject.Build.cs` file.
 4. Regenerate your project's solution files.
 
+## Supported Engine Version
+
+5.0 or higher
+
+## Supported Platforms
+
+- Windows
+- Mac
+- Linux
+
+## Network Replication Support
+
+Not Supported
+
 ## How to Use
 
 ### 1. Set up your message structure:
