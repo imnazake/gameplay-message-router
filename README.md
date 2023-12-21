@@ -1,65 +1,62 @@
 # Gameplay Message Router
 
-A subsystem that allows registering for and sending messages between unconnected gameplay objects.
-<br>
-You can send and listen for messages that contain data in specific channels (defined using gameplay tags).
-<br>
-(e.g: you can use this subsystem for sending transient data that needs to be displayed in the user-interface without directly exposing game code).
+The Gameplay Message Router is a robust subsystem designed for registering and facilitating communication between unconnected gameplay objects. This system allows you to send and receive messages containing specific data through defined channels, utilizing gameplay tags. Developed by Epic Games, Inc., this subsystem is compatible with Unreal Engine 5.0.0 or higher and currently supported on the Windows platform.
 
-##### Created By
-+ Epic Games, Inc.
- 
-##### Engine Version
-+ 5.0.0 or higher
+## Getting Started
 
-#### Supported Platforms
-+ Windows
+To integrate the Gameplay Message Router into your project, follow these simple steps:
 
-#### Network Replication
-+ Not Replicated
+1. Obtain the Lyra game project from the [Lyra Github Repo](https://github.com/EpicGames/UnrealEngine/tree/ue5-main/Samples/Games/Lyra) (requires a Github account linked to Epic Games).
+2. Copy the 'GameplayMessageRuntime' plugin from the Lyra project's plugins folder and paste it into your project's plugins folder (YourProject/Plugins/GameplayMessageRuntime).
+3. Add 'GameplayMessageRuntime' to your `YourProject.Build.cs` file.
+4. Regenerate your project's solution files.
 
-##### How To Setup
-+ Get Lyra game project from here : [(Lyra Github Repo - Requires Github account to be linked to EpicGames)](https://github.com/EpicGames/UnrealEngine/tree/ue5-main/Samples/Games/Lyra)
-+ Copy GameplayMessageRuntime plugin from Lyra project plugins folder, and paste it inside your project plugins folder. (YourProject/Plugins/GameplayMessageRuntime)
-+ Add 'GameplayMessageRuntime' to your to YourProject.Build.cs file.
-+ Regenerate project solution files.
+## How to Use
 
-##### How To Use It
-+ Create your message structure which contains all the data that you want to send.
+### 1. Set up your message structure:
 
-![](/Docs/Capture01.PNG)
+![Message Structure](/Docs/Capture01.PNG)
 
-+ In your class create a function to send the message when called, and add a gameplay tag that will represent the channel to be used for sending/receiving.
+### 2. Create a function to send the message:
 
-![](/Docs/Capture02.PNG)
-![](/Docs/Capture03.PNG)
+In your class, create a function to send the message and add a gameplay tag representing the channel:
 
-+ NOTE: You can also broadcast messages from blueprint directly using BroadcastMessage node and skip creating the SendMessage function above
+![Send Message](/Docs/Capture02.PNG)
+![Channel Tag](/Docs/Capture03.PNG)
 
-![](/Docs/BP_Capture01.png)
+Note: You can also broadcast messages directly from Blueprint using the `BroadcastMessage` node.
 
-+ Now to test it in blueprint i created a child actor class from MyActor C++ class and another actor that doesn't necessarily need to inherit from MyActor.
+![Broadcast Message](/Docs/BP_Capture01.png)
 
-![](/Docs/Capture04.PNG)
+### 3. Test it in Blueprint:
 
-+ In Actor01 blueprint, i created a sample message to send as soon as the actor begin play is called. (after 1 second delay to allow the other actor to start listening otherwise it might not receive the message because it was not registered/listening)
+Create a child actor class from `MyActor` C++ class and another actor that doesn't necessarily need to inherit from `MyActor`.
 
-![](/Docs/Capture05.PNG)
+![Actor Classes](/Docs/Capture04.PNG)
 
-+ In Actor02 blueprint, to receive the messages we need to specify a channel and select the relevant message structure we sent from Actor01.
-On begin play we start listening for messages sent on ( Game.Data.SampleChannel ) and print the data to screen as soon as it received.
+In `Actor01` Blueprint, create a sample message to send on begin play.
 
-![](/Docs/Capture06.PNG)
+![Actor01 Blueprint](/Docs/Capture05.PNG)
 
-+ Define gameplay tags to use for sending or receiving messages on specific channels.
+In `Actor02` Blueprint, specify a channel and select the relevant message structure to receive the message from `Actor01`.
 
-![](/Docs/Capture07.PNG)
-![](/Docs/Capture08.PNG)
+![Actor02 Blueprint](/Docs/Capture06.PNG)
 
-+ Select the structure that contains your message data (SampleMessage in this case, sent from Actor01).
+### 4. Define gameplay tags and message structures:
 
-![](/Docs/Capture09.PNG)
+Define gameplay tags for sending or receiving messages on specific channels.
 
-+ After placing both of the actors in the level when you begin play you should see the message displayed on the screen which is sent from Actor01 and displayed from Actor02.
+![Gameplay Tags](/Docs/Capture07.PNG)
+![Gameplay Tags](/Docs/Capture08.PNG)
 
-![](/Docs/Capture10.PNG)
+Select the structure containing your message data (e.g., `SampleMessage`).
+
+![Message Structure](/Docs/Capture09.PNG)
+
+### 5. Test the setup:
+
+After placing both actors in the level, the message sent from `Actor01` should be displayed on `Actor02` when the game begins.
+
+![Gameplay Test](/Docs/Capture10.PNG)
+
+Enjoy seamless communication between gameplay objects using the Gameplay Message Router!
