@@ -11,20 +11,6 @@ To integrate the Gameplay Message Router into your project, follow these simple 
 3. Add 'GameplayMessageRuntime' to your `YourProject.Build.cs` file.
 4. Regenerate your project's solution files.
 
-## Supported Engine Versions
-
-5.0 or higher
-
-## Supported Platforms
-
-- Windows
-- Mac
-- Linux
-
-## Network Replication Support
-
-Not Supported
-
 ## How to Use
 
 ### 1. Set up your message structure:
@@ -74,3 +60,17 @@ After placing both actors in the level, the message sent from `Actor01` should b
 ![Gameplay Test](/Docs/Capture10.PNG)
 
 Enjoy seamless communication between gameplay objects using the Gameplay Message Router!
+
+## Supported Engine Versions
+
+5.0 or higher
+
+## Supported Platforms
+
+- Windows
+- Mac
+- Linux
+
+## Network Replication Support
+
+Not Supported
