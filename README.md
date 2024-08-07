@@ -6,7 +6,7 @@ The Gameplay Message Router is a robust subsystem designed for registering and f
 
 To integrate the Gameplay Message Router into your project, follow these simple steps:
 
-1. Obtain the Lyra game project from the [Lyra Github Repo](https://github.com/EpicGames/UnrealEngine/tree/ue5-main/Samples/Games/Lyra) (requires a Github account linked to Epic Games).
+1. Obtain the Lyra game project from the [Lyra Github Repo](https://github.com/EpicGames/UnrealEngine/tree/ue5-main/Samples/Games/Lyra/Plugins/GameplayMessageRouter) (requires a Github account linked to Epic Games).
 2. Copy the 'GameplayMessageRuntime' plugin from the Lyra project's plugins folder and paste it into your project's plugins folder (YourProject/Plugins/GameplayMessageRuntime).
 3. Add 'GameplayMessageRuntime' to your `YourProject.Build.cs` file.
 4. Regenerate your project's solution files.
